@@ -1,0 +1,366 @@
+*{
+	box-sizing: border-box;
+	margin : 0;
+	padding: 0;
+}
+
+/* wrap */
+#wrap{
+background: linear-gradient(270deg,#91ddfe,#a2f6c9, #d7a5fc,#ffd484,#ff84f7);
+background-size: 400% 400%;
+
+-webkit-animation: AnimationName 20s ease infinite;
+-moz-animation: AnimationName 20s ease infinite;
+animation: AnimationName 20s ease infinite;
+
+font-family: 'Comfortaa', cursive;
+height: auto;
+width: 100%;
+}
+
+
+
+/* slide */
+
+#slide{
+	/*background: url(../img/fond2.jpg) 0 0 no-repeat; */
+	background-color: white;
+	height: 700px;
+	margin: auto;
+	transition : background 1000ms ease;
+	width: 1100px;
+	
+}
+
+
+
+h1{
+	background: linear-gradient(270deg,#91ddfe,#a2f6c9, #d7a5fc,#ffd484,#ff84f7);
+	background-size: 300% 300%;
+	-webkit-animation: AnimationName 20s ease infinite;
+	-moz-animation: AnimationName 20s ease infinite;
+	animation: AnimationName 20s ease infinite;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	font-size: 20px;
+	font-weight: 300;
+	padding: 20px 40px;
+}
+
+
+
+#logo{
+	height: auto;
+	margin: auto;
+	margin-top: 12%;
+	width: 70%;
+
+}
+
+#logo svg{
+	height: auto;
+	width: 100%;
+}
+
+
+
+#circle{
+	background: linear-gradient(270deg,#91ddfe,#a2f6c9, #d7a5fc,#ffd484,#ff84f7);
+	background-size: 400% 400%;
+	-webkit-animation: AnimationName 20s ease infinite;
+	-moz-animation: AnimationName 20s ease infinite;
+	animation: AnimationName 20s ease infinite;
+
+	border-radius: 50px;
+	height: 95px;
+	margin: auto;
+	width: 95px;
+}
+
+
+
+#arrow{
+	height: 60px;
+	margin: auto;
+	margin-top: 120px;
+	padding-top: 15%;
+	width: 60px;
+}
+
+.arrow{
+	animation: rotationout 500ms;
+	height: auto;
+	text-decoration: none;
+	width: 100%;
+}
+
+.arrow:hover{
+	animation: rotationin 500ms;
+	animation-fill-mode: forwards;
+	display: block;
+}
+
+
+@keyframes rotationin {
+	from {transform: rotate(0deg);}
+     to   {transform: rotate(180deg);}
+}
+
+@keyframes rotationout {
+	from {transform: rotate(180deg);}
+     to   {transform: rotate(0deg);}
+}
+
+
+/* nav */
+
+section{
+	background-color: white;
+	height: 100vh;
+	margin: auto;
+	width: 1100px; 
+	
+}
+
+header{
+	
+	background-color: none;
+	margin: auto;
+	padding-left: 7%;
+	position: absolute;	
+	width: 1100px;
+
+}	
+
+.logo{
+	float: left;
+	margin: auto;
+	height: 45px;
+	width: auto;
+}
+
+.logo img{
+	width: 80%;
+}
+
+#search{
+	float: left;
+	height: 40px;	
+	line-height: 40px;
+
+}
+
+
+nav{
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	background: none;
+}
+
+nav li{
+	display: inline-block;
+	font-size: 14px; 
+	height: 50px;	
+	list-style: none;
+	text-align: center;
+	width: 60px;
+}
+
+nav li a{
+	color: white;
+	display: block;	
+	text-decoration: none;
+	transition: 500ms;	
+}
+
+nav li a:hover{
+	background: white;
+	border-radius: 50% 10%;
+	color: black;
+}
+
+h2{
+	background: linear-gradient(270deg,#91ddfe,#a2f6c9, #d7a5fc,#ffd484,#ff84f7);
+	background-size: 300% 300%;
+	-webkit-animation: AnimationName 20s ease infinite;
+	-moz-animation: AnimationName 20s ease infinite;
+	animation: AnimationName 20s ease infinite;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	height: 60px;
+	margin: auto;
+	padding-left: 24px;
+	padding-top: 20px;
+	width: 1100px;
+}
+
+
+/* main */
+main{
+	margin-top: 45px;
+}
+
+
+
+
+
+/* page 1 */
+
+#moods{
+	height: auto;
+	margin: auto;
+	padding-top: 10%;
+	width: 1000px;
+}
+
+.moods {
+	transform: scale(0);
+}
+
+
+
+.mood {
+	background: linear-gradient(270deg,#91ddfe,#a2f6c9, #d7a5fc,#ffd484,#ff84f7);
+	background-size: 300% 300%;
+	-webkit-animation: AnimationName 20s ease infinite;
+	-moz-animation: AnimationName 20s ease infinite;
+	animation: AnimationName 20s ease infinite;
+	display: inline-block;
+	height: 140px;
+	margin: 20px 10px;
+	opacity: 0.8;
+	padding: 10px;
+	width: 140px;
+}
+
+.zoom{
+	animation: zoom 2000ms ease;
+	animation-fill-mode: forwards;
+
+}
+
+
+@keyframes zoom {
+	from {transform: scale(0)}
+     to   {transform: scale(1)}
+}
+
+
+
+.dezoom{
+	animation: dezoom 2000ms ease;
+
+}
+
+
+@keyframes dezoom {
+	from {transform: scale(1)}
+     to   {transform: scale(0)}
+}
+
+
+.mood:hover{
+	animation : spin 1.5s linear;
+	font-weight: 700;
+	opacity: 1;
+   
+	/*Reflection*/
+   -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
+  
+	/*Glow*/
+   -webkit-box-shadow: 0px 0px 20px rgba(248, 179, 219, 0.877);
+   -moz-box-shadow: 0px 0px 20px rgba(248, 179, 219, 0.877);
+   box-shadow: 0px 0px 20px rgba(248, 179, 219, 0.877);
+
+   -webkit-text-shadow: 0px 0px 40px white;
+   -moz-text-shadow: 0px 0px 40px white;
+   text-shadow: 0px 0px 40px white;  
+}
+
+
+h3{
+	display: inline-block;
+	color: white;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+
+
+
+
+@keyframes spin{
+	from{
+	  transform:  rotateY(0deg);
+	}
+  
+	to{
+	  transform: rotateY(360deg);
+	}
+  }
+
+
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+p{
+	font-size: 14px;
+	font-weight: 300;
+	margin-top: 20%;
+	text-align: center;
+	
+}
+
+
+
+/* page 2 */
+iframe{
+	margin-left: 10%;
+}
+
+
+
+#circlescroll{
+	background-color: #a9bac9;
+	border-radius: 50px;
+	height: 40px;
+	margin : 5% auto;
+	padding-top: 5px;
+	width: 40px;
+}
+
+
+#circlescroll:hover{
+	background-color: #d4dce4;
+}
+
+
+#arrowscroll{
+	height: 25px;
+	margin: auto;
+	width: 25px;
+}
+
+
+
+
+footer{
+	height: 100vh;
+}
